@@ -500,4 +500,3 @@ FROM "COURSE_BOOKING" as "cb"
 		on cb.user_id = u.id
 WHERE cb.cancelled_at is null and DATE_PART('month', cb.booking_at)  = 11
 group by DATE_PART('month', cb.booking_at);
-
